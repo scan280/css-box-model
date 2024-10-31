@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+.box-one {
+    background-color: chartreuse;
+    border: blue;
+}
+
+.box-two {
+    background-color: rgb(255, 30, 0);
+    border: 0 solid rgb(205, 68, 187);
+}
+/*The error was in the html file. I was not using the
+keyword class i.e <h1 class = "box-two"> instead I was using
+<h1 text-two="box-two"*/
