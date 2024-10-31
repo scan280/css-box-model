@@ -6,13 +6,25 @@
 
 .box-one {
     background-color: chartreuse;
-    padding: 20px;
-    border: 20px solid blue;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border: 30px solid blue;
+    margin: 100px;
 }
+/*chrome dev tools shows the size of the boz as 180*180
+despite setting h as 100px and width as 100px because
+in the box model size of the box= height+padding at the top + padding at the 
+bottom + border top + border bottom. */
 
 .box-two {
     background-color: rgb(255, 30, 0);
     border: 0 solid rgb(205, 68, 187);
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border: 20px solid blue;
+    margin: 60px;
 }
 /*The error was in the html file. I was not using the
 keyword class i.e <h1 class = "box-two"> instead I was using
