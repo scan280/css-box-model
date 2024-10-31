@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-size: 40px;
+    box-sizing: border-box;
 }
 
 .box-one {
@@ -9,13 +10,27 @@
     padding: 10px;
     height: 100px;
     width: 100px;
-    border: 30px solid blue;
+    border: 20px solid blue;
     margin: 100px;
+    /*box-sizing: border-box;*/
 }
 /*chrome dev tools shows the size of the boz as 180*180
 despite setting h as 100px and width as 100px because
-in the box model size of the box= height+padding at the top + padding at the 
-bottom + border top + border bottom. */
+in the box model size of the box= height+padding
+ at the top + padding at the 
+bottom + border top + border bottom.
+180 = 100+40+40
+
+
+Adding box-sizing: border-box makes the box size become
+100px total because now the total size=total padding + total
+border+interior
+box with content size
+100 = 20+40+40.
+
+It's easier to use border box so it's added at the beginning 
+of the page to cater for all elements.
+*/
 
 .box-two {
     background-color: rgb(255, 30, 0);
